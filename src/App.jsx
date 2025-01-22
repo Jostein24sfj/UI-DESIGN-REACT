@@ -1,6 +1,6 @@
 import {BlogPreviewCard} from "./Components/BlogPreviewCard/BlogPreviewCard"
 import './App.css'
-import {RecipePage} from "./components/MatOppskrift/MatOppskrift"
+import {RecipePage} from "./components/RecipePage/RecipePage"
 
 function App() {
   
