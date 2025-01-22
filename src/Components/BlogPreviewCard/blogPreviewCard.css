@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 300px;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid black;
+}
+
+.topImg {
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+footer {
+  display: flex;
+}
