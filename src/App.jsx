@@ -1,6 +1,6 @@
 import {BlogPreviewCard} from "./Components/BlogPreviewCard/BlogPreviewCard"
 import './App.css'
-import { MatOppskrift } from "./components/MatOppskrift/MatOppskrift"
+import {RecipePage} from "./components/MatOppskrift/MatOppskrift"
 
 function App() {
   
@@ -12,7 +12,7 @@ function App() {
     </section>
 
     <section>
-      <MatOppskrift/>
+      <RecipePage/>
     </section>
     
   </main>)
