@@ -1,3 +1,11 @@
+import "./blogPreviewCard.css"
+
 export function BlogPreviewCard(){
-    return <div>tittel</div>
+    return (
+        
+        <div>
+            tittel
+        </div>
+            
+    )
 }
