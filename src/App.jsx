@@ -1,6 +1,7 @@
 import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
 import "./App.css";
-import { RecipePage } from "./components/RecipePage/RecipePage";
+import { RecipePage } from "./Components/RecipePage/RecipePage";
+import { NFTCard } from "./Components/NFTCard/NFTCard"; 
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
     <section>
       <BlogPreviewCard/>
     </section>
-    
+
+    <section>
+      <NFTCard/>
+    </section>
 
     <section>
       <RecipePage/>
