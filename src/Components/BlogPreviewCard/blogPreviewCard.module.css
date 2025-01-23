@@ -1,0 +1,62 @@
+
+.card {
+  display: grid;
+  gap: 16px; /*! sjekk om du finner en verdi som er bedre */
+  width: 325px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1.5px solid black;
+  font-family: "Figtree", serif;
+  /*! legg til box-shadow */
+}
+
+.topImg {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 24px;
+  /*! set a correct height for the image */
+}
+
+.cardContent {
+  display: grid;
+  gap: 16px;
+}
+
+.cardContent h3 {
+  width: fit-content;
+  border-radius: 10px; /*! change this to a bit lower px */
+  /*! change font-size, should be around 16-18px */
+  background-color: rgb(242, 206, 77);
+  padding: 6px;
+/*! add correct font-weight */
+}
+
+.card p {
+  /* padding-top: 16px;
+  padding-bottom: 12px; */
+}
+
+.card p.desciption {
+  /*! endre color for denne teksten */
+}
+
+
+
+div.author {
+  display: flex;
+  align-items: center;
+  /*! legg til gap */
+}
+
+.author img {
+  width: auto;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border-bottom: none;
+  /*! endre height og width til en bedre størrelse */
+}
+
+.author h4 {
+/*! sjekk om en annen font-weight ser bedre ut */
+}

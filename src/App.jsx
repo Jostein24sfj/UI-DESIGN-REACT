@@ -1,16 +1,12 @@
-import {BlogPreviewCard} from "./Components/BlogPreviewCard/BlogPreviewCard"
-import './App.css'
-import {RecipePage} from "./components/RecipePage/RecipePage"
+import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
+import "./App.css";
+import { RecipePage } from "./components/RecipePage/RecipePage";
 
 function App() {
-  
-
-  return (<main>
-
-
-    <header></header>
-
-
+  return (
+    <>
+      <header></header>
+      <main>
 
     <section>
       <BlogPreviewCard/>
@@ -20,18 +16,14 @@ function App() {
       <RecipePage/>
     </section>
 
-
-
-
     <section>
-      <ResultsSummaryComponent/>
+      {/* <ResultsSummaryComponent/> */}
     </section>
 
-
-
+  </main>
     <footer></footer>
-    
-  </main>)
+    </>
+  )
 }
 
-export default App
+export default App;
