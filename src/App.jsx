@@ -8,18 +8,22 @@ function App() {
       <header></header>
       <main>
 
-        <section>
-          <BlogPreviewCard />
-        </section>
-    
-        <section>
-          <RecipePage />
-        </section>
-        
-      </main>
-      <footer></footer>
+    <section>
+      <BlogPreviewCard/>
+    </section>
+
+    <section>
+      <RecipePage/>
+    </section>
+
+    <section>
+      <ResultsSummaryComponent/>
+    </section>
+
+  </main>
+    <footer></footer>
     </>
-  );
+  )
 }
 
 export default App;
