@@ -9,7 +9,7 @@ export function BlogPreviewCard(){
             <header>
             <img class="topImg" src={illustrationImage} alt="" />
             <h1>Learning</h1>
-            <p>Produsert 29.10.2024</p>
+            <p>Produsert 23.01.2025</p>
             </header>
 
             <section>

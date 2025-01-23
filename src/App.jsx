@@ -6,6 +6,12 @@ function App() {
   
 
   return (<main>
+
+
+    <header></header>
+
+
+
     <section>
       <BlogPreviewCard/>
     </section>
@@ -13,6 +19,10 @@ function App() {
     <section>
       <RecipePage/>
     </section>
+
+
+
+    <footer></footer>
     
   </main>)
 }
