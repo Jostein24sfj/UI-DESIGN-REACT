@@ -1,62 +1,70 @@
-
 .card {
   display: grid;
-  gap: 16px; /*! sjekk om du finner en verdi som er bedre */
+  gap: 26px;
   width: 325px;
-  padding: 20px;
+  padding: 22px;
   border-radius: 24px;
   border: 1.5px solid black;
   font-family: "Figtree", serif;
-  /*! legg til box-shadow */
+  box-shadow: 8px 8px black;
 }
 
 .topImg {
   object-fit: cover;
   width: 100%;
-  border-radius: 24px;
-  /*! set a correct height for the image */
+  border-radius: 12px;
+  height: 206px;
+  border-bottom: none;
 }
 
 .cardContent {
   display: grid;
-  gap: 16px;
+  /* gap: 16px; */
+}
+
+.cardContent h2 {
+  font-size: 19px;
+  font-weight: 900;
 }
 
 .cardContent h3 {
   width: fit-content;
-  border-radius: 10px; /*! change this to a bit lower px */
-  /*! change font-size, should be around 16-18px */
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 900;
   background-color: rgb(242, 206, 77);
   padding: 6px;
-/*! add correct font-weight */
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .card p {
-  /* padding-top: 16px;
-  padding-bottom: 12px; */
+  font-size: 11px;
+  padding-top: 14px;
+  font-weight: 700;
 }
 
-.card p.desciption {
-  /*! endre color for denne teksten */
+.card p.description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: smaller;
+  font-weight: 600;
+  line-height: 1.5;
 }
-
-
 
 div.author {
   display: flex;
   align-items: center;
-  /*! legg til gap */
+  gap: 12px;
 }
 
 .author img {
   width: auto;
-  height: 50px;
+  height: 32px;
   border-radius: 50%;
   object-fit: cover;
   border-bottom: none;
-  /*! endre height og width til en bedre størrelse */
 }
 
 .author h4 {
-/*! sjekk om en annen font-weight ser bedre ut */
+  font-weight: 800;
 }

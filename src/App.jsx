@@ -11,6 +11,7 @@ function App() {
     <section>
       <BlogPreviewCard/>
     </section>
+    
 
     <section>
       <RecipePage/>
