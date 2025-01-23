@@ -17,7 +17,7 @@ function App() {
     </section>
 
     <section>
-      <ResultsSummaryComponent/>
+      {/* <ResultsSummaryComponent/> */}
     </section>
 
   </main>
