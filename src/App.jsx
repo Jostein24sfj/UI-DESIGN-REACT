@@ -1,30 +1,25 @@
-import {BlogPreviewCard} from "./Components/BlogPreviewCard/BlogPreviewCard"
-import './App.css'
-import {RecipePage} from "./components/RecipePage/RecipePage"
+import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
+import "./App.css";
+import { RecipePage } from "./components/RecipePage/RecipePage";
 
 function App() {
-  
+  return (
+    <>
+      <header></header>
+      <main>
 
-  return (<main>
-
-
-    <header></header>
-
-
-
-    <section>
-      <BlogPreviewCard/>
-    </section>
-
-    <section>
-      <RecipePage/>
-    </section>
-
-
-
-    <footer></footer>
+        <section>
+          <BlogPreviewCard />
+        </section>
     
-  </main>)
+        <section>
+          <RecipePage />
+        </section>
+        
+      </main>
+      <footer></footer>
+    </>
+  );
 }
 
-export default App
+export default App;

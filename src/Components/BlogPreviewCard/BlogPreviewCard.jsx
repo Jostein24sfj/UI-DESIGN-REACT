@@ -1,28 +1,28 @@
-import "./blogPreviewCard.css"
-import avatarImage from "./image-avatar.webp"
-import illustrationImage from "./illustration-article.svg"
+import "./blogPreviewCard.css";
+import avatarImage from "./image-avatar.webp";
+import illustrationImage from "./illustration-article.svg"; // add desktop image instead
 
-export function BlogPreviewCard(){
-    return (
-        
-        <div class= "card">
-            <header>
-            <img class="topImg" src={illustrationImage} alt="" />
-            <h1>Learning</h1>
-            <p>Produsert 23.01.2025</p>
-            </header>
+export function BlogPreviewCard() {
+  return (
+    <>
+      <div className="card">
+        <img className="topImg" src={illustrationImage} alt="" />
+        <div className="cardContent">
+          <h3>Learning</h3>
+          {/* endre teksten under så den er lik designet:  */}
+          <p>Produsert 23.01.2025</p>
 
-            <section>
-            <h2>HTML & CSS foundation</h2>
-            <p>These languages are the backbone of every website,
-               defining structure, content and presentation.</p>
-            </section>
-            
-            <footer>
-            <img src={avatarImage} alt="" />
-             <h3>Greg Hopper</h3>
-            </footer>
+          <h2>HTML & CSS foundation</h2>
+          <p className="description">
+            These languages are the backbone of every website, defining
+            structure, content and presentation.
+          </p>
+        <div className="author">
+          <img src={avatarImage} alt="" />
+          <h4>Greg Hopper</h4>
         </div>
-            
-    )
+        </div>
+      </div>
+    </>
+  );
 }
