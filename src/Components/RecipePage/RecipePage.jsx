@@ -19,9 +19,15 @@ export function RecipePage() {
         <div className={styles["prep-time"]}>
           <h3>Preparation time</h3>
           <ul>
-            <li><strong>Total:</strong> Approximately 10 minutes</li>
-            <li><strong>Preparation:</strong> 5 minutes</li>
-            <li><strong>Cooking:</strong> 5 minutes</li>
+            <li>
+              <strong>Total:</strong> Approximately 10 minutes
+            </li>
+            <li>
+              <strong>Preparation:</strong> 5 minutes
+            </li>
+            <li>
+              <strong>Cooking:</strong> 5 minutes
+            </li>
           </ul>
         </div>
 
@@ -31,17 +37,32 @@ export function RecipePage() {
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
           <li>1 tablespoon of butter or oil</li>
-          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
         </ul>
 
         <h2>Instructions</h2>
         <ol>
-          <li><strong>Beat the eggs:</strong> Beat with a pinch of salt and pepper.</li>
-          <li><strong>Heat the pan:</strong> Use medium heat with butter or oil.</li>
-          <li><strong>Cook the omelette:</strong> Tilt the pan to coat evenly.</li>
-          <li><strong>Add fillings:</strong> Add optional fillings when set.</li>
-          <li><strong>Fold and serve:</strong> Fold one edge and cook briefly.</li>
-          <li><strong>Enjoy:</strong> Serve hot with seasoning.</li>
+          <li>
+            <strong>Beat the eggs:</strong> Beat with a pinch of salt and
+            pepper.
+          </li>
+          <li>
+            <strong>Heat the pan:</strong> Use medium heat with butter or oil.
+          </li>
+          <li>
+            <strong>Cook the omelette:</strong> Tilt the pan to coat evenly.
+          </li>
+          <li>
+            <strong>Add fillings:</strong> Add optional fillings when set.
+          </li>
+          <li>
+            <strong>Fold and serve:</strong> Fold one edge and cook briefly.
+          </li>
+          <li>
+            <strong>Enjoy:</strong> Serve hot with seasoning.
+          </li>
         </ol>
 
         <h2>Nutrition</h2>

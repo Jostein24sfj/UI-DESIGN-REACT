@@ -22,6 +22,13 @@ function App() {
 
 
 
+
+    <section>
+      <ResultsSummaryComponent/>
+    </section>
+
+
+
     <footer></footer>
     
   </main>)
