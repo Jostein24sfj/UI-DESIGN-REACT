@@ -23,12 +23,16 @@
   color: greenyellow;
 }
 
-.cardContent p {
-  color: rgb(106, 127, 158);
+.cardContent > p {
+  color: rgb(0, 102, 255);
 }
 
-.crypto p {
+p.crypto {
   color: aqua;
+}
+
+p.numbers {
+  color: rgb(255, 0, 191);
 }
 
 .cardContent h4 {
