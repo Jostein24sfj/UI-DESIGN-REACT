@@ -1,0 +1,70 @@
+.card {
+  margin: 0;
+  width: 325px;
+  height: auto;
+  padding: 22px;
+  border-radius: 16px;
+  font-family: "Figtree", serif;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.image {
+  border-radius: 100%;
+  padding: 18px;
+  object-fit: cover;
+  width: 112px;
+  height: 100%;
+  border-bottom: none;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.location {
+  padding: 8px;
+  color: rgb(196, 237, 56);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.info p {
+  padding-bottom: 6px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.buttons {
+  display: grid;
+  gap: 12px;
+  text-align: center;
+}
+
+.buttons button {
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: rgb(51, 51, 51);
+  height: 40px;
+  width: 240px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a4949;
+}
+
+button:active {
+  background-color: #272727;
+}
