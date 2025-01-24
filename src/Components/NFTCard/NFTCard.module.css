@@ -8,25 +8,31 @@
   border: 1.5px solid black;
   font-family: "Figtree", serif;
   background-color: rgb(21, 39, 63);
-  color: aliceblue;
+  /* color: aliceblue; */
 }
 
 .topImg {
   object-fit: cover;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
   height: 100%;
   border-bottom: none;
+}
+
+.cardContent h3 {
+  color: greenyellow;
 }
 
 .cardContent p {
   color: rgb(106, 127, 158);
 }
 
-.cardContent h3 {
+.crypto p {
+  color: aqua;
 }
 
 .cardContent h4 {
+  color: orange;
 }
 
 div.author {
