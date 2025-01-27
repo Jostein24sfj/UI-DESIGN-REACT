@@ -1,6 +1,7 @@
 import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
 import "./App.css";
 import { RecipePage } from "./components/RecipePage/RecipePage";
+import { ResultsSummaryComponent } from "./components/ResultsSummaryComponent/ResultsSummaryComponent";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
     </section>
 
     <section>
-      {/* <ResultsSummaryComponent/> */}
+      <ResultsSummaryComponent/>
     </section>
 
   </main>
