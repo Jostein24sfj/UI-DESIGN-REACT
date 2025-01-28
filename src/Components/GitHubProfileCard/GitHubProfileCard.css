@@ -1,0 +1,44 @@
+.github-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .github-profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .github-profile-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .github-profile-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .github-profile-card a {
+    font-size: 1rem;
+    color: #0366d6;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .github-profile-card a:hover {
+    text-decoration: underline;
+  }
+  

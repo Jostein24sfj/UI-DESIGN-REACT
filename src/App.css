@@ -1,5 +1,7 @@
 /* General Styles */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,8 +12,10 @@ body {
   line-height: 1.6;
   background-color: #f4f7fc; /* Light background for contrast */
   color: #333;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Header Section */
 header {
   background-color: #007bff;
   color: white;
@@ -19,6 +23,7 @@ header {
   text-align: center;
 }
 
+/* Footer Section */
 footer {
   background-color: #333;
   color: white;
@@ -54,9 +59,11 @@ nav ul li a:hover {
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
+  max-width: 100%; /* Ensure the main content doesn't exceed the screen width */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Styling for individual sections */
@@ -65,14 +72,9 @@ section {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%;
-  max-width: 400px;
+  width: 100%; /* Ensure sections take up full width of their container */
+  max-width: 100%; /* Ensure sections don't exceed the container width */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Title */
@@ -102,4 +104,64 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 768px) {
+  /* On larger screens, switch to a grid layout for sections */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid layout */
+    gap: 20px;
+  }
+
+  section {
+    width: 100%; /* Ensure sections still fit inside their grid cells */
+  }
+}
+
+/* Ensure consistency across components */
+.container,
+.card,
+.recipe-container {
+  width: 100%;
+  max-width: 100%; /* Make sure the container fits inside the section */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding/borders in width */
+}
+
+.card img {
+  width: 100%; /* Make images responsive */
+  height: auto;
+}
+
+/* Additional Specific Styles for Components (optional) */
+.blog-preview-card, 
+.recipe-page,
+.results-summary-component,
+.github-profile-card,
+.weather-widget {
+  width: 100%;
+  max-width: 100%; /* Ensure they don't exceed the container width */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.weather-widget {
+  max-width: 400px; /* For example, limit the max-width of the weather widget */
+}
+
+.recipe-page {
+  max-width: 600px; /* You can limit the max-width of the recipe page for readability */
+}
+
+.results-summary-component {
+  max-width: 500px; /* Similar for the results summary component */
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent scrolling beyond the viewport */
 }
