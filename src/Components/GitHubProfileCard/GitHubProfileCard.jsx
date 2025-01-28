@@ -7,24 +7,39 @@ function GitHubProfileCard({ username }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${username}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setProfile(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError("Error fetching GitHub profile");
-        setLoading(false);
-      });
-  }, [username]);
+    // Reset error and loading state on username change
+    setLoading(true);
+    setError(null);
+
+    // Fetch GitHub user profile
+    if (username) {
+      fetch(`https://api.github.com/users/${username}`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("User not found");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setProfile(data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message); // Set error message
+          setLoading(false);
+        });
+    } else {
+      setError("Username is required.");
+      setLoading(false);
+    }
+  }, [username]); // Depend on username to refetch data when it changes
 
   if (loading) {
     return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return <div>Error: {error}</div>;
   }
 
   if (!profile) {

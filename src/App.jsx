@@ -1,10 +1,11 @@
+import React from "react";
 import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
 import "./App.css";
 import { RecipePage } from "./components/RecipePage/RecipePage";
 import { ResultsSummaryComponent } from "./components/ResultsSummaryComponent/ResultsSummaryComponent";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import GitHubProfileCard from "./components/GitHubProfileCard/GitHubProfileCard"; // Import GitHubProfileCard
 import WeatherWidget from "./components/WeatherWidget/WeatherWidget"; // Import WeatherWidget
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -39,15 +40,17 @@ function App() {
         {/* Routes for Different Pages */}
         <Routes>
           {/* Homepage Route */}
-          <Route path="/" element={<div>Welcome to the homepage!</div>} />{" "}
-          {/* Empty homepage content */}
+          <Route path="/" element={<div>Welcome to the homepage!</div>} /> {/* Empty homepage content */}
           {/* Recipe page route */}
           <Route path="/recipe" element={<RecipePage />} />
           {/* Results page route */}
           <Route path="/results" element={<ResultsSummaryComponent />} />
           {/* Blog Preview page route */}
-          <Route path="/blog-preview" element={<BlogPreviewCard />} />{" "}
-          {/* New route for Blog Preview */}
+          <Route path="/blog-preview" element={<BlogPreviewCard />} /> {/* Blog Preview route */}
+          {/* GitHub Profile route */}
+          <Route path="/github" element={<GitHubProfileCard username="octocat" />} /> {/* GitHub Profile route */}
+          {/* Weather route */}
+          <Route path="/weather" element={<WeatherWidget />} /> {/* Weather route */}
         </Routes>
 
         {/* Main Section with Content */}
