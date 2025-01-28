@@ -18,6 +18,9 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
+                <Link to="/blog-preview">Blog Preview</Link>{" "}
+              </li>
+              <li>
                 <Link to="/recipe">Recipe</Link>
               </li>
               <li>
@@ -35,11 +38,16 @@ function App() {
 
         {/* Routes for Different Pages */}
         <Routes>
-          <Route path="/" element={<BlogPreviewCard />} />
+          {/* Homepage Route */}
+          <Route path="/" element={<div>Welcome to the homepage!</div>} />{" "}
+          {/* Empty homepage content */}
+          {/* Recipe page route */}
           <Route path="/recipe" element={<RecipePage />} />
+          {/* Results page route */}
           <Route path="/results" element={<ResultsSummaryComponent />} />
-          <Route path="/github" element={<GitHubProfileCard username="octocat" />} /> {/* Replace 'octocat' with desired GitHub username */}
-        <Route path="/weather" element={<WeatherWidget city="London" />} /> {/* Replace 'London' with desired city */}
+          {/* Blog Preview page route */}
+          <Route path="/blog-preview" element={<BlogPreviewCard />} />{" "}
+          {/* New route for Blog Preview */}
         </Routes>
 
         {/* Main Section with Content */}

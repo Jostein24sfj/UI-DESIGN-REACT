@@ -15,7 +15,6 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Header Section */
 header {
   background-color: #007bff;
   color: white;
@@ -23,7 +22,6 @@ header {
   text-align: center;
 }
 
-/* Footer Section */
 footer {
   background-color: #333;
   color: white;
@@ -55,36 +53,55 @@ nav ul li a:hover {
   color: #ffdd57;
 }
 
-/* Main Layout - Flexbox for Sections */
+/* Main Layout for Homepage */
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Center sections horizontally */
   gap: 20px;
   padding: 20px;
-  max-width: 100%; /* Ensure the main content doesn't exceed the screen width */
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  max-width: 100%; /* Make sure it doesn't overflow horizontally */
+  overflow-x: hidden; /* Prevent overflow */
 }
 
-/* Styling for individual sections */
 section {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%; /* Ensure sections take up full width of their container */
-  max-width: 100%; /* Ensure sections don't exceed the container width */
+  width: 100%; /* Allow section to take full width */
+  max-width: 800px; /* Limit max-width to avoid overflow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; /* Center section within the container */
 }
 
-/* Section Title */
+section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure no horizontal overflow on small screens */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent scrolling beyond the viewport */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Styling for Individual Sections */
 section h1 {
   font-size: 1.8rem;
   color: #333;
   margin-bottom: 15px;
 }
 
-/* Section Description */
 section p {
   font-size: 1rem;
   color: #555;
@@ -106,62 +123,135 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Responsive Layout for Larger Screens */
-@media (min-width: 768px) {
-  /* On larger screens, switch to a grid layout for sections */
-  main {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid layout */
-    gap: 20px;
-  }
-
-  section {
-    width: 100%; /* Ensure sections still fit inside their grid cells */
-  }
-}
-
-/* Ensure consistency across components */
-.container,
-.card,
-.recipe-container {
-  width: 100%;
-  max-width: 100%; /* Make sure the container fits inside the section */
+/* Recipe Page Styles */
+.recipePageWrapper {
+  background-color: var(--Stone100); /* Light stone background */
   padding: 20px;
-  box-sizing: border-box; /* Include padding/borders in width */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Full width */
+  min-height: 100vh;
+  font-family: "serif"; /* Default font for body */
 }
 
-.card img {
-  width: 100%; /* Make images responsive */
+/* Recipe card */
+.recipePage {
+  max-width: 100%; /* Ensure it takes up full width of its container */
+  width: 100%;
+  background-color: var(--White);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Image styling */
+.recipeImage {
+  width: 100%; /* Ensure image is responsive */
   height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid var(--Stone150);
 }
 
-/* Additional Specific Styles for Components (optional) */
-.blog-preview-card, 
-.recipe-page,
-.results-summary-component,
-.github-profile-card,
-.weather-widget {
+/* Title and description */
+.recipeTitle {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-family: "sans-serif"; /* Default sans-serif font for title */
+}
+
+.recipeDescription {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: "serif"; /* Default serif font for description */
+}
+
+/* Preparation time section */
+.prepTime {
+  background-color: var(--Rose50);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.prepTimeTitle {
+  margin-bottom: 10px;
+}
+
+.prepTimeList {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  font-family: "sans-serif"; /* Default sans-serif font for list */
+}
+
+/* Ingredients section */
+.ingredientsTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "sans-serif"; /* Default sans-serif font for section titles */
+}
+
+.ingredientsList {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+}
+
+/* Instructions section */
+.instructionsTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "sans-serif"; /* Default sans-serif font for section titles */
+}
+
+.instructionsList {
+  margin: 10px 0 20px;
+  padding-left: 20px;
+}
+
+/* Nutrition table */
+.nutritionTitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "sans-serif"; /* Default sans-serif font for section titles */
+}
+
+.nutritionTable {
   width: 100%;
-  max-width: 100%; /* Ensure they don't exceed the container width */
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.weather-widget {
-  max-width: 400px; /* For example, limit the max-width of the weather widget */
+.nutritionTable td {
+  padding: 8px;
+  border: 1px solid var(--Stone150);
 }
 
-.recipe-page {
-  max-width: 600px; /* You can limit the max-width of the recipe page for readability */
+.measurements {
+  text-align: right;
 }
 
-.results-summary-component {
-  max-width: 500px; /* Similar for the results summary component */
+/* Additional text elements */
+h1,
+h2,
+h3 {
+  font-family: "sans-serif"; /* Default sans-serif font for all h1, h2, h3 */
 }
 
-/* Prevent horizontal overflow */
-html, body {
-  width: 100%;
-  overflow-x: hidden; /* Prevent scrolling beyond the viewport */
+p,
+li {
+  font-family: "serif"; /* Default serif font for all p and li */
+}
+
+button {
+  background-color: var(--Brown800);
+  color: var(--White);
+  font-family: "sans-serif"; /* Default sans-serif font for buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Rose800); /* Darker rose color on hover */
 }
