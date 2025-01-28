@@ -40,7 +40,7 @@ function App() {
         {/* Routes for Different Pages */}
         <Routes>
           {/* Homepage Route */}
-          <Route path="/" element={<div>Welcome to the homepage!</div>} /> {/* Empty homepage content */}
+          <Route path="/" element={null} />
           {/* Recipe page route */}
           <Route path="/recipe" element={<RecipePage />} />
           {/* Results page route */}
