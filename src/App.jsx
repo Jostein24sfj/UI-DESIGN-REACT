@@ -19,7 +19,7 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/blog-preview">Blog Preview</Link>{" "}
+                <Link to="/blog-preview">Blog Preview</Link>
               </li>
               <li>
                 <Link to="/recipe">Recipe</Link>
@@ -39,8 +39,8 @@ function App() {
 
         {/* Routes for Different Pages */}
         <Routes>
-          {/* Homepage Route */}
-          <Route path="/" element={null} />
+          {/* Empty Homepage Route */}
+          <Route path="/" element={null} /> {/* No content for homepage */}
           {/* Recipe page route */}
           <Route path="/recipe" element={<RecipePage />} />
           {/* Results page route */}
