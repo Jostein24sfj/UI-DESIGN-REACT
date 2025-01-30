@@ -1,0 +1,298 @@
+:root {
+  /* Primary Colors */
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  /* Gradients */
+  --Lightslateblue: hsl(252, 100%, 67%); /* background */
+  --Lightroyalblue: hsl(241, 81%, 54%); /* background */
+  --Violetblue: hsla(256, 72%, 46%, 1); /* circle */
+  --Persianblue: hsla(241, 72%, 46%, 0); /* circle */
+  /* Neutrals */
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: HankenGrotesk;
+  src: url("fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100dvh;
+  background-color: var(--Paleblue);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 737px;
+  height: 512px;
+  background-color: var(--White);
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 12px hsla(221, 100%, 96%, 0.6);
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+.circleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 0.7),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.resultsSummaryTitle {
+  color: var(--Paleblue);
+  font-family: HankenGrotesk;
+  font-size: 1.5rem;
+  opacity: 75%;
+  font-weight: 600;
+}
+
+.circleHeader {
+  color: var(--White);
+  font-size: 4.5rem;
+  font-family: HankenGrotesk;
+  margin-bottom: -10px;
+}
+
+.circleText {
+  font-family: HankenGrotesk;
+  color: var(--Paleblue);
+  opacity: 50%;
+}
+
+.cardLeftBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cardLeftText {
+  color: var(--White);
+  font-family: HankenGrotesk;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cardLeftParagraph {
+  font-family: HankenGrotesk;
+  text-align: center;
+  color: var(--Paleblue);
+  opacity: 75%;
+  width: 70%;
+}
+
+.cardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.statsBox1,
+.statsBox2,
+.statsBox3,
+.statsBox4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 288px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.statsBox1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.statsBox2 {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.statsBox3 {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.statsBox4 {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.statsLeft {
+  display: flex;
+}
+
+.statsRight {
+  display: flex;
+}
+
+.statsImage {
+  margin-right: 10px;
+}
+
+.statsTitle {
+  color: var(--Lightred);
+  font-family: HankenGrotesk;
+}
+
+.statsTitle2 {
+  font-family: HankenGrotesk;
+  color: var(--Orangeyyellow);
+}
+
+.statsTitle3 {
+  font-family: HankenGrotesk;
+  color: var(--Greenteal);
+}
+
+.statsTitle4 {
+  font-family: HankenGrotesk;
+  color: var(--Cobaltblue);
+}
+
+.statsResults {
+  font-family: HankenGrotesk;
+  font-weight: 600;
+}
+
+.statsSpan {
+  opacity: 40%;
+}
+
+.cardRightHeaderBox {
+  display: flex;
+  justify-content: flex-start;
+  width: 288px;
+}
+
+.cardRightHeader {
+  font-family: HankenGrotesk;
+  font-size: 1.5rem;
+  opacity: 75%;
+  font-weight: 600;
+}
+
+button {
+  width: 288px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: none;
+  background-color: var(--Darkgrayblue);
+  border-radius: 30px;
+  color: var(--White);
+  font-size: 17px;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
+  .card {
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 375px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    gap: 10px;
+  }
+
+  .cardLeft {
+    height: 375px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .circleBox {
+    width: 140px;
+    height: 140px;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .circleHeader {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+  }
+
+  .circleText {
+    font-size: 1rem;
+  }
+
+  .cardLeftText {
+    font-size: 1.5rem;
+  }
+
+  .cardLeftParagraph {
+    font-size: 1rem;
+  }
+
+  .cardRight {
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  .cardRightHeader {
+    font-size: 1.2rem;
+  }
+
+  .statsBox1,
+  .statsBox2,
+  .statsBox3,
+  .statsBox4 {
+    width: 315px;
+  }
+
+  .statsTitle,
+  .statsTitle2,
+  .statsTitle3,
+  .statsTitle4,
+  .statsResults {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 315px;
+  }
+}
