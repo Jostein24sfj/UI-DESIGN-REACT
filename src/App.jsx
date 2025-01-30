@@ -76,6 +76,12 @@ function App() {
         <section className="main-section">
           <ResultsSummaryComponent />
         </section>
+        <section className="main-section">
+          <NFTCard />
+        </section>
+        <section className="main-section">
+          <SocialCard />
+        </section>
       </main>
 
       {/* Footer */}
