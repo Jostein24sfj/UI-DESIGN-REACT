@@ -4,21 +4,21 @@ import recipeImage from "./image-omelette.jpeg";
 
 export function RecipePage() {
   return (
-    <div className={styles["recipe-page-wrapper"]}>
-      <div className={styles["recipe-page"]}>
-        <img src={recipeImage} alt="Omelette" />
+    <div className={styles.recipePageWrapper}>
+      <div className={styles.recipePage}>
+        <img className={styles.recipeImage} src={recipeImage} alt="Omelette" />
 
-        <h1>Simple Omelette Recipe</h1>
+        <h1 className={styles.recipeTitle}>Simple Omelette Recipe</h1>
 
-        <p>
+        <p className={styles.recipeDescription}>
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
 
-        <div className={styles["prep-time"]}>
-          <h3>Preparation time</h3>
-          <ul>
+        <div className={styles.prepTime}>
+          <h3 className={styles.prepTimeTitle}>Preparation time</h3>
+          <ul className={styles.prepTimeList}>
             <li>
               <strong>Total:</strong> Approximately 10 minutes
             </li>
@@ -31,8 +31,8 @@ export function RecipePage() {
           </ul>
         </div>
 
-        <h2>Ingredients</h2>
-        <ul>
+        <h2 className={styles.ingredientsTitle}>Ingredients</h2>
+        <ul className={styles.ingredientsList}>
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
@@ -42,8 +42,8 @@ export function RecipePage() {
           </li>
         </ul>
 
-        <h2>Instructions</h2>
-        <ol>
+        <h2 className={styles.instructionsTitle}>Instructions</h2>
+        <ol className={styles.instructionsList}>
           <li>
             <strong>Beat the eggs:</strong> Beat with a pinch of salt and
             pepper.
@@ -65,8 +65,8 @@ export function RecipePage() {
           </li>
         </ol>
 
-        <h2>Nutrition</h2>
-        <table>
+        <h2 className={styles.nutritionTitle}>Nutrition</h2>
+        <table className={styles.nutritionTable}>
           <tbody>
             <tr>
               <td>Calories</td>
