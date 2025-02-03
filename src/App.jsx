@@ -1,6 +1,6 @@
 import React from "react";
-import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
 import "./App.css";
+import { BlogPreviewCard } from "./Components/BlogPreviewCard/BlogPreviewCard";
 import { RecipePage } from "./components/RecipePage/RecipePage";
 import { ResultsSummaryComponent } from "./components/ResultsSummaryComponent/ResultsSummaryComponent";
 import GitHubProfileCard from "./components/GitHubProfileCard/GitHubProfileCard"; // Import GitHubProfileCard
