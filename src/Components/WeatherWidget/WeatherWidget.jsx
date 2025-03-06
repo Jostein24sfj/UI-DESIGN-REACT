@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./WeatherWidget.css"; // Import the CSS for the Weather Widget
 
 function WeatherWidget({ city }) {

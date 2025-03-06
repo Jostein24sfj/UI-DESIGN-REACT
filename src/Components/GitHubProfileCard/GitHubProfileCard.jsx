@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./GitHubProfileCard.css"; // Import the CSS for the GitHub Profile Card
 
 function GitHubProfileCard({ username }) {
