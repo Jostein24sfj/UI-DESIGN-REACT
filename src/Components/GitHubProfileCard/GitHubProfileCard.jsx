@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import "./GitHubProfileCard.css"; // Import the CSS for the GitHub Profile Card
+import PropTypes from "prop-types"; // Import PropTypes
+import styles from "./GitHubProfileCard.module.css"; // Import the CSS module
 
 function GitHubProfileCard({ username }) {
   const [profile, setProfile] = useState(null);
@@ -47,7 +48,7 @@ function GitHubProfileCard({ username }) {
   }
 
   return (
-    <div className="github-profile-card">
+    <div className={styles["github-profile-card"]}>
       <img src={profile.avatar_url} alt={`${profile.login} Avatar`} />
       <h2>{profile.name}</h2>
       <p>@{profile.login}</p>
@@ -58,5 +59,10 @@ function GitHubProfileCard({ username }) {
     </div>
   );
 }
+
+// PropTypes validation for the 'username' prop
+GitHubProfileCard.propTypes = {
+  username: PropTypes.string.isRequired,
+};
 
 export default GitHubProfileCard;

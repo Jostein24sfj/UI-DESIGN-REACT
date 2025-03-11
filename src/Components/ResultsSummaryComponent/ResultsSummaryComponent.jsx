@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ResultsSummaryComponent.module.css";
 import reactionIcon from "./icon-reaction.svg";
 import memoryIcon from "./icon-memory.svg";
