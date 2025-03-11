@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./RecipePage.module.css";
 import recipeImage from "./image-omelette.jpeg";
 
