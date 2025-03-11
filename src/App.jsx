@@ -5,7 +5,7 @@ import { ResultsSummaryComponent } from "./components/ResultsSummaryComponent/Re
 import GitHubProfileCard from "./components/GitHubProfileCard/GitHubProfileCard";
 import WeatherWidget from "./components/WeatherWidget/WeatherWidget";
 import Header from "./components/Header/Header";
-import './App.css';
+import "./App.css";
 
 export function App() {
   return (
@@ -17,7 +17,10 @@ export function App() {
         <Route path="/recipe" element={<RecipePage />} />
         <Route path="/results" element={<ResultsSummaryComponent />} />
         <Route path="/blog-preview" element={<BlogPreviewCard />} />
-        <Route path="/github" element={<GitHubProfileCard username="octocat" />} />
+        <Route
+          path="/github"
+          element={<GitHubProfileCard username="octocat" />}
+        />
         <Route path="/weather" element={<WeatherWidget />} />
       </Routes>
 

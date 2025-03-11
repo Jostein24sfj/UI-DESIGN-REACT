@@ -18,10 +18,10 @@ export function BlogPreviewCard() {
             These languages are the backbone of every website, defining
             structure, content and presentation.
           </p>
-        <div className={styles.author}>
-          <img src={avatarImage} alt="" />
-          <h4>Greg Hopper</h4>
-        </div>
+          <div className={styles.author}>
+            <img src={avatarImage} alt="" />
+            <h4>Greg Hopper</h4>
+          </div>
         </div>
       </div>
     </>
